@@ -1,0 +1,123 @@
+// all api information 
+
+1 Add User Method Post 
+Api = http://localhost:4000/api/users/add-user 
+
+request 
+
+{
+    "name": "priyanka",
+    "createdOn": "12-04-2022",
+    "gender": "Female",
+    "dob": "22-05-1997",
+    "city": "Maha",
+    "state": "Maha",
+    "pincode": 1234,
+    "modifiedOn": "12-04-2022"
+}
+
+response 
+
+{
+    "message": "User Created Successfully.",
+    "data": []
+}
+
+
+2 Get user Method Get 
+
+Api = http://localhost:4000/api/users/get-user 
+
+request NA
+
+response 
+
+{
+    "message": "User Get Successfully.",
+    "Data": [
+        {
+            "_id": "642b11ff242443f51e30f08c",
+            "name": "priyanka 123",
+            "createdOn": "12-10-2022",
+            "gender": "Female 123",
+            "dob": "22-05-1997",
+            "city": "Maha 123",
+            "state": "Maha 123",
+            "pincode": 1234,
+            "modifiedOn": "12-10-2022",
+            "__v": 0
+        },
+        {
+            "_id": "642b184ca6b3a75d152ed9dd",
+            "name": "priyanka",
+            "createdOn": "12-04-2022",
+            "gender": "Female",
+            "dob": "22-05-1997",
+            "city": "Maha",
+            "state": "Maha",
+            "pincode": 1234,
+            "modifiedOn": "12-04-2022"
+        }
+    ]
+}
+
+
+3 update user  Method Patch 
+
+Api = http://localhost:4000/api/users/update-user/642b11ff242443f51e30f08c 
+
+request 
+{
+    "name": "priyanka 123",
+    "createdOn": "12-10-2022",
+    "gender": "Female 123",
+    "dob": "22-05-1997",
+    "city": "Maha 123",
+    "state": "Maha 123",
+    "pincode": 1234,
+    "modifiedOn": "12-10-2022"
+}
+
+response 
+
+{
+    "message": "User Updated Successfully.",
+    "Data": []
+}
+
+
+4 delete user Method delete 
+
+Api = http://localhost:4000/api/users/user-delete/642b13987160d1602efd424c 
+
+request user in params 
+
+response 
+{
+    "message": "User Deleted Successfully.",
+    "Data": []
+}
+
+5 get single user 
+
+api =  http://localhost:4000/api/users/get-single/642b184ca6b3a75d152ed9dd 
+
+request = user id in params
+
+response 
+
+{
+    "message": "User Get Successfully.",
+    "Data": {
+        "_id": "642b184ca6b3a75d152ed9dd",
+        "name": "priyanka",
+        "createdOn": "12-04-2022",
+        "gender": "Female",
+        "dob": "22-05-1997",
+        "city": "Maha",
+        "state": "Maha",
+        "pincode": 1234,
+        "modifiedOn": "12-04-2022"
+    }
+}
+
